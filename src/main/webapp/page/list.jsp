@@ -33,7 +33,7 @@
     <LI class=first>房型</LI>
     <LI><SELECT name=type_id> <OPTION selected value="">不限</OPTION> <OPTION 
       value=1000>一室一厅</OPTION> <OPTION value=1001>一室两厅</OPTION> <OPTION 
-      value=1002>两室一厅</OPTION> <OPTION value=1003>两室两厅</OPTION></SELECT> 
+      value=1002>两室一厅</OPTION> <OPTION value=1003>两室两厅</OPTION> </SELECT>
   </LI></UL></DD>
   <DD>
   <UL>
@@ -42,48 +42,34 @@
       value=0-40>40以下</OPTION> <OPTION value=40-500>40-500</OPTION> <OPTION 
       value=500-1000000>500以上</OPTION></SELECT> </LI></UL></DD></FORM></DL></DIV>
 <DIV class="main wrap">
-<TABLE class=house-list>
-  <TBODY>
-  <TR>
-    <TD class=house-thumb><span><A href="details.jsp" target="_blank"><img src="../images/thumb_house.gif" width="100" height="75" alt=""></a></span></TD>
-    <TD>
-      <DL>
-        <DT><A href="details.jsp" target="_blank">尽快回家</A></DT>
-        <DD>海淀区中关村大街,346平米<BR>联系方式：3456 </DD></DL></TD>
-    <TD class=house-type>一室一厅</TD>
-    <TD class=house-price><SPAN>346.0</SPAN>元/月</TD></TR>
-  <TR class=odd>
-    <TD class=house-thumb><span><A href="details.jsp" target="_blank"><img src="../images/thumb_house.gif" width="100" height="75" alt=""></a></span></TD>
-    <TD>
-      <DL>
-        <DT><A href="details.jsp" target="_blank">大房子</A></DT>
-        <DD>海淀区中关村大街,100平米<BR>联系方式：123456789 </DD></DL></TD>
-    <TD class=house-type>一室一厅</TD>
-    <TD class=house-price><SPAN>230.0</SPAN>元/月</TD></TR>
-  <TR>
-    <TD class=house-thumb><span><A href="details.jsp" target="_blank"><img src="../images/thumb_house.gif" width="100" height="75" alt=""></a></span></TD>
-    <TD>
-      <DL>
-        <DT><A href="details.jsp" target="_blank">123</A></DT>
-        <DD>海淀区中关村大街,123平米<BR>联系方式：123 </DD></DL></TD>
-    <TD class=house-type>一室一厅</TD>
-    <TD class=house-price><SPAN>123.0</SPAN>元/月</TD></TR>
-  <TR class=odd>
-    <TD class=house-thumb><span><A href="details.jsp" target="_blank"><img src="../images/thumb_house.gif" width="100" height="75" alt=""></a></span></TD>
-    <TD>
-      <DL>
-        <DT><A href="details.jsp" target="_blank">jjjj</A></DT>
-        <DD>海淀区中关村大街,123平米<BR>联系方式：ff </DD></DL></TD>
-    <TD class=house-type>一室一厅</TD>
-    <TD class=house-price><SPAN>123.0</SPAN>元/月</TD></TR>
-  <TR>无租房信息</TR></TBODY></TABLE>
-<DIV class=pager>
-<UL>
-  <LI class=current><A href="#">首页</A></LI>
-  <LI><A href="#">上一页</A></LI>
-  <LI><A href="#">下一页</A></LI>
-  <LI><A href="#">末页</A></LI></UL><SPAN 
-class=total>1/2页</SPAN> </DIV></DIV>
+  <%--显示页面--%>
+  <TABLE class=house-list>
+    <TBODY>
+      <TR>
+        <TD class=house-thumb><span><A href="details.jsp" target="_blank"><img src="../images/thumb_house.gif" width="100" height="75" alt=""></a></span></TD>
+        <TD>
+          <DL>
+            <DT><A href="details.jsp" target="_blank">尽快回家</A></DT>
+            <DD>海淀区中关村大街,346平米<BR>联系方式：3456 </DD>
+          </DL>
+        </TD>
+        <TD class=house-type>一室一厅</TD>
+        <TD class=house-price><SPAN>346.0</SPAN>元/月</TD>
+      </TR>
+
+      <TR>无租房信息</TR>
+    </TBODY>
+  </TABLE>
+  <%--分页--%>
+  <DIV class=pager>
+  <UL>
+    <LI class=current><A href="#">首页</A></LI>
+    <LI><A href="#">上一页</A></LI>
+    <LI><A href="#">下一页</A></LI>
+    <LI><A href="#">末页</A></LI></UL><SPAN
+  class=total>1/2页</SPAN>
+  </DIV>
+</DIV>
 <DIV id=footer class=wrap>
 <DL>
   <DT>青鸟租房 © 2018 北大青鸟 京ICP证1000001号</DT>

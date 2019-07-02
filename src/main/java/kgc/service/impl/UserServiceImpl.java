@@ -37,7 +37,7 @@ public class UserServiceImpl  implements UserService {
         }
 
         List<Users> list=usersMapper.selectByExample(usersExample);
-        PageInfo<Users> pageInfo=new PageInfo<>(list);
+        PageInfo<Users> pageInfo=new PageInfo<Users>(list);
         return pageInfo;
     }
 

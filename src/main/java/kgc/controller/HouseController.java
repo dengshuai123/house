@@ -22,7 +22,7 @@ public class HouseController {
      @ResponseBody
     public Map<String,Object> getHouseByNoPass(Integer page,Integer rows){
          PageInfo<HouseExt> pageInfo=houseService.getHouseByState(page,rows,0);  //o表示未审核
-         Map<String,Object> map=new HashMap<>();
+         Map<String,Object> map=new HashMap<String,Object>();
          map.put("total",pageInfo.getTotal());
          map.put("rows",pageInfo.getList());
          return map;
@@ -33,7 +33,7 @@ public class HouseController {
     @ResponseBody
     public Map<String,Object> getHouseByYesPass(Integer page,Integer rows){
         PageInfo<HouseExt> pageInfo=houseService.getHouseByState(page,rows,1);  //o表示未审核
-        Map<String,Object> map=new HashMap<>();
+        Map<String,Object> map=new HashMap<String,Object>();
         map.put("total",pageInfo.getTotal());
         map.put("rows",pageInfo.getList());
         return map;
@@ -45,7 +45,7 @@ public class HouseController {
     @ResponseBody
     public Map<String,Object> passHouse(String id){
         int temp=houseService.passHouse(id);  //o表示未审核
-        Map<String,Object> map=new HashMap<>();
+        Map<String,Object> map=new HashMap<String,Object>();
         map.put("result",temp);
         return map;
     }

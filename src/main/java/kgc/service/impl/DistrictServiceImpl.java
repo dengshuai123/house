@@ -39,7 +39,7 @@ public class DistrictServiceImpl implements DistrictService
         //criteria.andNameLike("%东%");
 
         List<District> list=districtMapper.selectByExample(example);
-        return new PageInfo<>(list);
+        return new PageInfo<District>(list);
     }
 
     @Override

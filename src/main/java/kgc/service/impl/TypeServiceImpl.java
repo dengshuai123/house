@@ -35,7 +35,7 @@ public class TypeServiceImpl implements TypeService {
         //criteria.andNameLike("%东%");
 
         List<Type> list=typeMapper.selectByExample(example);
-        return new PageInfo<>(list);
+        return new PageInfo<Type>(list);
     }
 
     @Override

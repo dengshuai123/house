@@ -23,7 +23,7 @@ public class StreetController {
     public Map<String,Object> getUsers(Integer page,Integer rows,Integer did){
         //调用业务
         PageInfo<Street> pageInfo=streetService.getStreetByDistrict(page,rows,did);
-        Map<String,Object> map=new HashMap<>();
+        Map<String,Object> map=new HashMap<String,Object>();
         map.put("total",pageInfo.getTotal());
         map.put("rows",pageInfo.getList());
         return map;

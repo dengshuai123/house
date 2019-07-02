@@ -27,7 +27,7 @@ public class StreetServiceImpl  implements StreetService {
         criteria.andDistrictIdEqualTo(districtId);
 
         List<Street> list= streetMapper.selectByExample(streetExample);
-        return new PageInfo<>(list);
+        return new PageInfo<Street>(list);
     }
 
     @Override
